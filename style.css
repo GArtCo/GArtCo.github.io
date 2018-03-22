@@ -1,0 +1,93 @@
+html,body {
+	margin: 0;
+	padding: 0;
+  background-color: black;
+  cursor: url('Art/Bee.jpg'), auto;
+}
+.slider {
+	width: 100%;
+  height: 100%;
+}
+
+.slider-wrapper {
+	width: 0px;
+	height: 0px;
+  padding: 0px;
+}
+
+.slide {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 5s linear;
+}
+
+.slider-wrapper > .slide:first-child {
+	opacity: 1;
+}
+
+*{
+  margin: 0px;
+}
+
+.stretch{
+  height: 100%;
+  width: 100%;
+}
+
+.center{
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.square{
+  height: 75%;
+  display: block;
+	margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+	margin-bottom: auto;
+}
+
+nav{
+  background-color: white;
+  padding:0px 0px 0px 5px;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  width: 100%;
+}
+
+nav a{
+  padding: 0px 0px 0px 5px;;
+  margin: 0px;
+  text-decoration: none;
+  font-family: fantasy, sans-serif;
+  font-size: 20px;
+  color: blue;
+  display: inline-block;
+}
+
+nav span{
+  padding: 0px 0px 0px 5px;;
+  margin: 0px;
+  font-family: fantasy, sans-serif;
+  font-size: 20px;
+  color: darkblue;
+  display: inline-block;
+	font-weight: bold;
+}
+
+nav a:hover{
+  color: #AAAAAA;
+}
+
+p{
+	color: white;
+	text-indent: 15px;
+	margin: 10px;
+	font-family: Verdana, sans-serif;
+}
