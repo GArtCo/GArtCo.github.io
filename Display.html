@@ -1,7 +1,7 @@
 <DOCTYPE html>
   <html>
   <head>
-<title>Order-GuistiArtCo.</title>
+<title>Order|GuistiArtCo.</title>
 <link rel="stylesheet" href="style.css">
 <style>
 #art h1{
@@ -15,11 +15,12 @@ img{
   z-index: 1;
 }
 p{
-  color: blue;
+  color: darkblue;
+  	width: 190px;
 }
 </style>
 </head>
-<body>
+<body onload="alert('Welcome to the GuistiArtCo order page! When your ready to order, click the button at the bottom of the page. Thank you!');">
   <nav id="nav">
 <a href="index.html"><h1>Home</h1></a>
 <a href="Dallin.html"><h1>Dallin</h1></a>
@@ -33,23 +34,30 @@ p{
   <br><br>
   <div id="art">
   <h1>Luke Guisti</h1>
-  <img src="Art/Bee.jpg" style="height: 150px; width: 200px;" onmouseover="bd();" onmouseout="hbd();" id="bee" onclick="fullb();"/>
-  <p id="BeeD" style="display:none; cursor: pointer;" onmouseover="bd();" onmouseout="hbd();" onclick="fullb();" onclick="fullb();">Bee-</p>
-  <p id="bEeD" style="display:none; cursor: pointer;" onmouseover="bd();" onmouseout="hbd();" onclick="fullb();"><br>The Bee is a wonderful work of art by Luke Guisti.</p>
-  <img src="Art/Volcano2.jpg" style="height: 150px; width: 200px;"/>
+  <img src="Art/Bee.jpg" style="height: 150px; width: 200px;" onmouseover="d('bee', 'BeeD', 'bEeD');" onmouseout="hd('bee', 'BeeD', 'bEeD');" id="bee" onclick="fulll('bee', 'BeeD', 'bEeD');"/>
+  <p id="BeeD" class="things" style="display:none; cursor: pointer;" onmouseover="d('bee', 'BeeD', 'bEeD');" onmouseout="hd('bee', 'BeeD', 'bEeD');" onclick="fulll('bee', 'BeeD', 'bEeD');" onclick="fullb();">Bee-</p>
+  <p id="bEeD" class="things" style="display:none; cursor: pointer;" onmouseover="d('bee', 'BeeD', 'bEeD');" onmouseout="hd('bee', 'BeeD', 'bEeD');" onclick="fulll('bee', 'BeeD', 'bEeD');"><br>The Bee is a wonderful work of art by Luke Guisti.</p>
+  <img src="Art/Volcano2.jpg" style="height: 150px; width: 200px;" onmouseover="d('vol', 'VolD', 'vOlD');" onmouseout="hd('vol', 'VolD', 'vOlD');" onclick="fulll('vol', 'VolD', 'vOlD')" id="vol" class="things"/>
+  <p id="VolD" class="things" style="display:none; cursor: pointer;" onmouseover="d('vol', 'VolD', 'vOlD');" onmouseout="hd('vol', 'VolD', 'vOlD');" onclick="fulll('vol', 'VolD', 'vOlD');">Volcano-</p>
+  <p id="vOlD" class="things" style="display:none; cursor: pointer;" onmouseover="d('vol', 'VolD', 'vOlD');" onmouseout="hd('vol', 'VolD', 'vOlD');" onclick="fulll('vol', 'VolD', 'vOlD');"><br>The Volcano is a wonderful work of art by Luke Guisti.</p>
   <br>
   <h1>Parker Guisti</h1>
-  <img src="Art/Dots.jpg" style="height: 200px; width: 150px;" onmouseover="dd();" onmouseout="hdd();" id="dots" onclick="fulld();"/>
-  <p id="DotsD" style="display:none; cursor: pointer;" onmouseover="dd();" onmouseout="hdd();" onclick="fulld();">Dots-</p>
-  <p id="dOtsD" style="display:none; cursor: pointer;" onmouseover="dd();" onmouseout="hdd();" onclick="fulld();"><br>Dots is a wonderful work of art by Parker Guisti.</p>
-  <img src="Art/Colors1.jpg" style="height: 200px; width: 150px;"/>
-  <img src="Art/Swirls.jpg" style="height: 200px; width: 150px;"/>
-  <img src="Art/Colors2.jpg" style="height: 150px; width: 200px;"/>
-  <img src="Art/Colors3.jpg" style="height: 150px; width: 200px;"/>
-  <img src="Art/Brown.jpg" style="height: 150px; width: 200px;"/>
-  <img src="Art/Snowflake.jpg" style="height: 150px; width: 200px;"/>
-  <img src="Art/Lines1.jpg" style="height: 150px; width: 150px;"/>
-  <img src="Art/Lines2.jpg" style="height: 150px; width: 150px;"/>
+  <img src="Art/Dots.jpg" style="height: 200px; width: 150px;" onmouseover="d('dots', 'DotsD', 'dOtsD');" onmouseout="hd('dots', 'DotsD', 'dOtsD');" id="dots" onclick="full('dots', 'DotsD', 'dOtsD');"/>
+  <p id="DotsD" class="things" style="display:none; cursor: pointer;" onmouseover="d('dots', 'DotsD', 'dOtsD');" onmouseout="hd('dots', 'DotsD', 'dOtsD');" onclick="full('dots', 'DotsD', 'dOtsD');">Dots-</p>
+  <p id="dOtsD" class="things" style="display:none; cursor: pointer;" onmouseover="d('dots', 'DotsD', 'dOtsD');" onmouseout="hd('dots', 'DotsD', 'dOtsD');" onclick="full('dots', 'DotsD', 'dOtsD');"><br>Dots is a wonderful work of art by Parker Guisti.</p>
+  <img src="Art/Colors1.jpg" class="things" style="height: 200px; width: 150px;" id="colors1" onmouseover="d('colors1', 'Colors1D', 'cOlors1D');" onmouseout="hd('colors1', 'Colors1D', 'cOlors1D');" onclick="full('colors1', 'Colors1D', 'cOlors1D');"/>
+  <p id="Colors1D" class="things" style="display:none; cursor: pointer;" onmouseover="d('colors1', 'Colors1D', 'cOlors1D');" onmouseout="hd('colors1', 'Colors1D', 'cOlors1D');" onclick="full('colors1', 'Colors1D', 'cOlors1D');">Colors1-</p>
+  <p id="cOlors1D" class="things" style="display:none; cursor: pointer;" onmouseover="d('colors1', 'Colors1D', 'cOlors1D');" onmouseout="hd('colors1', 'Colors1D', 'cOlors1D');" onclick="full('colors1', 'Colors1D', 'cOlors1D');"><br></p>
+  <img src="Art/Swirls.jpg"  class="things"style="height: 200px; width: 150px;"/>
+    <img src="Art/Colors4.jpg" class="things" style="height: 200px; width: 150px;"/>
+  <img src="Art/Colors2.jpg" class="things" style="height: 150px; width: 200px;"/>
+  <img src="Art/Colors3.jpg" class="things" style="height: 150px; width: 200px;"/>
+  <img src="Art/Brown.jpg" class="things" style="height: 150px; width: 200px;" id="brown" onmouseover="d('brown', 'BrownD', 'brOwnD');" onmouseout="hd('brown', 'BrownD', 'brOwnD');" onclick="fulll('brown', 'BrownD', 'brOwnD');"/>
+  <p id="BrownD" class="things" style="display:none; cursor: pointer; font-size: 13px;" onmouseover="d('brown', 'BrownD', 'brOwnD');" onmouseout="hd('brown', 'BrownD', 'brOwnD');" onclick="fulll('brown', 'BrownD', 'brOwnD');">Brown-</p>
+  <p id="brOwnD" class="things" style="display:none; cursor: pointer; font-size: 13px;" onmouseover="d('brown', 'BrownD', 'brOwnD');" onmouseout="hd('brown', 'BrownD', 'brOwnD');" onclick="fulll('brown', 'BrownD', 'brOwnD');"><br>Parker created <em>Brown</em> at age 6. Although he claims that "it's ugly" and demands that GuistiArtCo doesn't sell it, it looks surprisinly pleasing and beautiful despite it's murky color.</p>
+  <img src="Art/Snowflake.jpg" class="things" style="height: 150px; width: 200px;"/>
+  <img src="Art/Lines1.jpg" class="things" style="height: 150px; width: 150px;" onclick="full('lines1', 'BrownD', 'brOwnD');" id="lines1"/>
+  <img src="Art/Lines2.jpg" class="things" style="height: 150px; width: 150px;"/>
   <br>
   <h1>Weston Guisti</h1>
   <img src="Art/Weston.jpg" style="height: 200px; width: 150px;"/>
